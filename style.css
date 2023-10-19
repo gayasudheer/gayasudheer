@@ -1,0 +1,111 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  font-family: 'PT Serif', sans-serif;
+
+}
+header {
+  background-color: #86b9b0;
+  color: black;
+  padding: 20px; /* Add padding for spacing around content */
+}
+
+nav{
+  float: left;
+}
+#home {
+  /* Other styles for the section */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.image-container {
+  background-color:#4c7273;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%; /* Optional, adjust as needed */
+  height: 90%; /* Optional, adjust as needed */
+}
+
+.text-overlay {
+    position: absolute; /* Set the text overlay to an absolute position */
+    top: 10; /* Position it at the top of the container */
+    left: 10; /* Position it at the left of the container */
+    background-color: rgba(0, 0, 0, 0.5); /* Add a semi-transparent background */
+    color: white; /* Set text color to white */
+    padding: 20px; /* Add padding for readability */
+}
+
+
+.text-overlay p {
+    margin: 20; /* Remove default margin for the paragraph */
+}
+/* Style for the floating navigation bar on the left side */
+.navbar {
+  position: fixed;
+  left: 0; /* Position the navbar on the left */
+  top: 0; /* Adjust the top position as needed */
+  background-color: #333; /* Background color for the navbar */
+  padding: 10px;
+  color: white; /* Text color for links */
+  height: 100%; /* Make the navbar take full height */
+  overflow-y: auto; /* Add scrolling if the content exceeds the viewport */
+  width: 200px; /* Set the width of the navbar as per your preference */
+}
+
+/* Style for the navigation links */
+.navbar a {
+  display: block;
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  transition: background-color 0.3s; /* Smooth transition for background color */
+}
+main{
+  
+}
+/* Style for the navigation links on hover */
+.navbar a:hover {
+  background-color: #555;
+}
+
+#about {
+  background-color: #d0d6d6; /* Replace with your desired color */
+  padding: 20px; /* Add some spacing around the content */
+  color: black; /* Adjust text color for better contrast */
+}
+#education{
+  background-color: #86b9b0;
+  padding: 20px;
+  color: black;
+}
+#projects{
+  background-color: #DDD6D3;
+  padding: 20px;
+  color: black;
+}
+#resume{
+  background-color:#042630 ;
+  padding: 20px;
+  color: white;
+}
+#contact_me{
+  background-color:#4c7273 ;
+  padding: 20px;
+  color: white;
+}
+form {
+    margin: 0 auto; /* Center-align the form horizontally */
+    max-width: 400px; /* Set a maximum width to avoid it becoming too narrow */
+    display: grid;
+    gap: 1em;
+    padding: 20px; /* Add padding to create space around the form content */
+}
+
+
+
