@@ -1,188 +1,171 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Gaya's Portfolio Website</title>
-  <link href="style.css" rel="stylesheet" type="text/css" />
-   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap">
-
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap">
+    <title>Gaya's Portfolio Website</title>
+    <script src="script.js"></script>
 
 </head>
 <body>
-<header>
-  <h1 align="center">Welcome to Gaya's Website</h1>
-  <nav class="navbar" align="center">
-    <a href="https://www.google.com/" target="_blank">Visit Google</a>
-    <a href="#about">About Me</a>
-    <a href="#education">My Education</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact me">Contact Me</a>
-  </nav>
-</header>
-  <main>
-    <div class="image-container">
-    <img src="ameer-basheer-Jn9dn8nN4C0-unsplash.jpg" alt="Background Image" width="800px" height="500px">
-      <div class="text-overlay">
-            <p>Gaya Sudheer</p>
-        </div>
-  </div>
-  <section id="about">
-    <h2 align="center">About Me</h2>
-    <p align="center">My name is Gayathri (Gaya) Sudheer and I am a senior studying CIS. My dream job is to become a data engineer in the healthcare industry. Originally, I wanted to go into the healthcare field and become a PA or doctor but decided against it after shadowing some professionals who worked in the industry. I've always had a strong interest in data and the healthcare field so a data engineering was the perfect combination for me. For this role, having a strong foundation in databases (both structured and unstructured), data warehousing, data architecture, and various coding languages like SQL and Python are necessary to be successful. Data engineers also need to have solid statistics knowledge, analytical skills, and familiarity with Big Data technologies. They are responsible for designing, constructing, testing, and maintaining databases of all sizes. Aside from technical skills, they also need strong communication, collaboration, and presentation skills especially when working in teams and explaining information to non-technical people. </p>
-<p align="center"> Ideally, I would like to work in a in-house environment. I also like working on teams and working alongside my coworkers so working in-house seems like a great option. While freelancing sounds very appealing, the benefits of an in-house environment offers more stability and benefits like a 401K and healthcare plans that outweigh the benefits of freelancing. The healthcare industry is also less prone to the impacts of the fluctuating economy so there will be more stability with the role as well. Eventually after working in the industry for a couple years gaining experience, I would like to try out consulting.</p>
-
-  </section>
-  <section id="aira_video">
-      <h3 align="center">Here is a video of my puppy Aira playing with my brother and another dog!</h3>
-      <section id="video" align="center">
-        <video controls poster="IMG_1514.jpg" 
-          width="500" height="500"
-          ><source src="IMG_3256.MOV" type="video/mp4"</video>
-      </section>
-  </section>
-  <section id="education">
-    <h2 align="center">My Education</h2>
-    <p>I've gained a variety of knowledge during my time in university...</p>
-    <style>
-  table {
-    border-collapse: collapse;
-    width: 100%;
-    border: 1px solid #ddd; /* Border around the table */
-  }
-
-  th, td {
-    border: 1px solid #ddd; /* Borders for cells */
-    padding: 8px;
-    text-align: center;
-  }
-</style>
-
-<table>
-  <tr>
-    <th>Year</th>
-    <th>Degree</th>
-    <th>Completion Status</th>
-  </tr>
-  <tr>
-    <td>2020</td>
-    <td>High School Diploma</td>
-    <td>Completed</td>
-  </tr>
-  <tr>
-    <td>2024</td>
-    <td>B.S. Computer Information Systems</td>
-    <td>In Progress</td>
-  </tr>
-</table>
-
-  </section>
-  <section id="resume">
-    <h2 align="center">Resume</h2>
-    <center><iframe src="GS_Resume (1).pdf" width="800" height="600" frameborder="0" ></iframe>
-    </center>
-    
-  </section>
-  <section id="projects">
-    <h2 align="center">Projects</h2>
-    <p>Here are some of the amazing projects I've created:</p>
-     <ul> 
-        <li><strong>Spotify Data Analysis Project</strong></li>
-            <ul>
-                <li>Utilized .csv files using Python libraries including Pandas, Numpy, Matplotlib, and Seaborn to manipulate, analyze, and
-                    clean raw data about songs on Spotify
-                </li>
-                <li>Built data visualizations using Matplotlib and Seaborn to create correlation heatmaps between data attributes using Pearson
-                    correlation
-                </li>
-            </ul>
-        <li><strong>DOC Calendar Improvement Process</strong></li>
-       <ul>
-         <li>utilized Power Automate to sync two calendars about upcoming changes impacting APS IT applications</li>
-         <li>Assisted with UAT testing for the upgraded Outage Map</li>
-       </ul>
-        <li><strong>Project Improvement Proposal Plan</strong></li>
-         <ul>
-           <li>Proposed and developed an RFID tracking system solution to manage and track hospital inventory and hosted data in a
-               cloud database
-           </li>
-           <li>Designed the User Interface for prototype software program</li>
-           <li>Delegated responsibilities to team members based on strengths and preferences to complete project requirements</li>
-         </ul>
-       
-        <li><strong>This Website!</strong></li>
+ <nav id="sidebar" class="closed">
+    <div id="menu-icon" class="closed">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+    </div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
     </ul>
-    
-  </section>
-</main>
-  <script src="script.js"></script>
-  <section id="contact_me">
-  <h2 style="text-align: center;">Contact Me</h2>
-  <h3 style="text-align: center;">All fields marked with * are REQUIRED</h3>
-  <form method="POST" action="submit_form.php"> <!-- Replace "submit_form.php" with your form handler URL -->
-    <label for="fname">First Name*:</label>
-    <input type="text" name="fname" id="fname" required>
-    <label for="lname">Last Name*:</label>
-    <input type="text" name="lname" id="lname" required>
-    <!-- Radio buttons -->
-    <label for="user">You are a:</label>
-    <div class="form-container">
-      <input type="radio" id="employer" name="user" value="new_user">
-      <label for="employer">Hiring Recruiter</label>
-      <input type="radio" id="student" name="user" value="existing_user">
-      <label for="student">Student</label>
+</nav>
+    <div id="content">
+     <div id="hero">
+    <img src="ameer-basheer-Jn9dn8nN4C0-unsplash.jpg" alt="Background Image">
+    <header>
+        <h1></h1>
+    </header>
+</div>
+        <section id="about">
+            <h2>About Me</h2>
+             <p>My name is Gayathri (Gaya) Sudheer and I am a senior studying CIS. My dream job is to become a data engineer in the healthcare industry. Originally, I wanted to go into the healthcare field and become a PA or doctor but decided against it after shadowing some professionals who worked in the industry. I've always had a strong interest in data and the healthcare field so a data engineering was the perfect combination for me. For this role, having a strong foundation in databases (both structured and unstructured), data warehousing, data architecture, and various coding languages like SQL and Python are necessary to be successful. Data engineers also need to have solid statistics knowledge, analytical skills, and familiarity with Big Data technologies. They are responsible for designing, constructing, testing, and maintaining databases of all sizes. Aside from technical skills, they also need strong communication, collaboration, and presentation skills especially when working in teams and explaining information to non-technical people. </p>
+            <p> Ideally, I would like to work in a in-house environment. I also like working on teams and working alongside my coworkers so working in-house seems like a great option. While freelancing sounds very appealing, the benefits of an in-house environment offers more stability and benefits like a 401K and healthcare plans that outweigh the benefits of freelancing. The healthcare industry is also less prone to the impacts of the fluctuating economy so there will be more stability with the role as well. Eventually after working in the industry for a couple years gaining experience, I would like to try out consulting.</p>
+        </section>
+        <section id="education">
+            <h2>My Education</h2>
+             <p>I've gained a variety of knowledge during my time in university...</p>
+            <table>
+              <tr>
+                <th>Year</th>
+                <th>Degree</th>
+                <th>Completion Status</th>
+              </tr>
+              <tr>
+                <td>2020</td>
+                <td>High School Diploma</td>
+                <td>Completed</td>
+              </tr>
+              <tr>
+                <td>2024</td>
+                <td>B.S. Computer Information Systems</td>
+                <td>In Progress</td>
+              </tr>
+            </table>
+          
+        </section>
+        <section id="resume">
+          <h2>Resume</h2>
+            <center>
+              <iframe src="GS_Resume (1).pdf" width="800" height="600" frameborder="0" ></iframe>
+            </center>
+        </section>
+        <section id="projects">
+            <section id="projects">
+              <h2>Projects</h2>
+              <p>Here are some of the amazing projects I've created:</p>
+               <ul> 
+                  <li><strong>Spotify Data Analysis Project</strong></li>
+                      <ul>
+                          <li>Utilized .csv files using Python libraries including Pandas, Numpy, Matplotlib, and Seaborn to manipulate, analyze, and
+                              clean raw data about songs on Spotify</li>
+                          <li>Built data visualizations using Matplotlib and Seaborn to create correlation heatmaps between data attributes using Pearson
+                              correlation</li>
+                      </ul>
+                  <li><strong>DOC Calendar Improvement Process</strong></li>
+                     <ul>
+                       <li>utilized Power Automate to sync two calendars about upcoming changes impacting APS IT applications</li>
+                       <li>Assisted with UAT testing for the upgraded Outage Map</li>
+                     </ul>
+                  <li><strong>Project Improvement Proposal Plan</strong></li>
+                     <ul>
+                       <li>Proposed and developed an RFID tracking system solution to manage and track hospital inventory and hosted data in a
+              cloud database</li>
+                       <li>Designed the User Interface for prototype software program</li>
+                       <li>Delegated responsibilities to team members based on strengths and preferences to complete project requirements</li>
+                     </ul>
+                  <li><strong>This Website!</strong></li>
+              </ul>
+            </section>
+        </section>
+        <section id="contact">
+             <section id="contact_me">
+                <h2>Contact Me</h2>
+                <h3>All fields marked with * are REQUIRED</h3>
+                <form method="POST" action="https://formspree.io/f/xjvqlbkj">
+                  <label for="fname">First Name*:</label>
+                  <input type="text" name="fname" id="fname" required>
+                  <label for="lname">Last Name*:</label>
+                  <input type="text" name="lname" id="lname" required>
+                  <label for="user">You are a:</label>
+                  <div class="form-container">
+                    <input type="radio" id="employer" name="user" value="new_user">
+                    <label for="employer">Hiring Recruiter</label>
+                    <input type="radio" id="student" name="user" value="existing_user">
+                    <label for="student">Student</label>
+                  </div>
+                  <label for="reason">Reason for Contacting Me:</label>
+                  <select name="reason">
+                    <option value="hr">Interview Opportunity</option>
+                    <option value="class_advice">Class Advice</option>
+                    <option value="intern">Internship Advice</option>
+                  </select>
+                  <label for="contact-preference">Please select how you would like to be in contact:</label>
+                  <div class="form-container">
+                    <input type="checkbox" name="contact-method" value="email">Email
+                    <input type="checkbox" name="contact-method" value="phone">Phone
+                    <input type="checkbox" name="contact-method" value="linkedin">LinkedIn
+                  </div>
+                  <label for="contact-info">Enter email, phone number, or LinkedIn username:</label>
+                  <input type="text" name="contact-info" id="contact-info" required>
+                  <label for="message">Message/Comments:</label>
+                  <textarea name="message" rows="3" cols="20"></textarea>
+                  <input type="submit" value="Submit">
+                  <input type="reset" value="Cancel">
+                </form>
+        </section>
     </div>
-    <label for="reason">Reason for Contacting Me:</label>
-    <select name="reason">
-      <option value="hr">Interview Opportunity</option>
-      <option value="class_advice">Class Advice</option>
-      <option value="intern">Internship Advice</option>
-    </select>
-    <label for="contact-preference">Please select how you would like to be in contact:</label>
-    <div class="form-container">
-      <input type="checkbox" name="contact-method" value="email">Email
-      <input type="checkbox" name="contact-method" value="phone">Phone
-      <input type="checkbox" name="contact-method" value="linkedin">LinkedIn
-    </div>
-    <label for="contact-info">Enter email, phone number, or LinkedIn username:</label>
-    <input type="text" name="contact-info" id="contact-info" required>
-    <label for="message">Message/Comments:</label>
-    <textarea name="message" rows="3" cols="20"></textarea>
-    <input type="submit" value="Submit">
-    <input type="reset" value="Cancel">
-  </form>
-</section>
-
-  <footer align="center">
-    <p>
-      <i>
-        <small>
-          Copyright © Gayathri Sudheer
-          <br>
-          <a href="mailto:your@email.com">gsudheer@asu.edu</a>
-          <br>
-        </small>
-      </i>
-    <div class="socialMediaLinks">
-      
-      <a href="https://instagram.com/gayasudheer?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
+        <footer>
+          <div class="socialMediaLinks">
+            <a href="https://instagram.com/gayasudheer?igshid=OGQ5ZDc2ODk2ZA==" target="_blank">
                 <i class="fab fa-instagram"></i>
             </a>
-      <a href="https://twitter.com/YourTwitterUsername" target="_blank">
-            <i class="fab fa-twitter"></i>
-        </a>
-        
-        <a href="https://facebook.com/YourFacebookPage" target="_blank">
-            <i class="fab fa-facebook"></i>
-        </a>
-        
-        <a href="https://www.linkedin.com/in/sudheer-gayathri/" target="_blank">
-            <i class="fab fa-linkedin"></i>
-        </a>
-    </div>
-  </footer>
- 
-</body>
+            <a href="https://twitter.com/YourTwitterUsername" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a href="https://gayasudheer.github.io/" target="_blank">
+                  <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/sudheer-gayathri/" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+            </a>
+          </div>
+        </footer>
+  <!-- Add this script tag to your HTML file, right before the closing </body> tag -->
+  <script>
+      function typeHeader(text, element, delay) {
+          let index = 0;
+          element.innerHTML = '';
+          function type() {
+              if (index < text.length) {
+                  element.innerHTML += text.charAt(index);
+                  index++;
+                  setTimeout(type, delay);
+              }
+          }
+          type();
+      }
 
+      // Call the typing function on page load
+      document.addEventListener('DOMContentLoaded', function () {
+          const headerElement = document.querySelector('header h1');
+          typeHeader("Welcome to Gaya's Website!", headerElement, 100); // Adjust delay for typing speed
+      });
+  </script>
+
+</body>
 </html>
